@@ -5,7 +5,8 @@
 
 float UCustomCamera::CustomLerp(float current, float target, float alpha, float crouchingZoom, bool isCrouching) {
 	
-	target = isCrouching ? target + crouchingZoom : target;
+	if (isCrouching)
+		target += crouchingZoom;
 
 	return current + alpha * (target - current);
 }

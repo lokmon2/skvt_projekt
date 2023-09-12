@@ -10,8 +10,7 @@
  * 
  */
 UCLASS()
-class SKVT_PROJEKT_API UCustomCamera : public UBlueprintFunctionLibrary
-{
+class SKVT_PROJEKT_API UCustomCamera : public UBlueprintFunctionLibrary {
 	GENERATED_BODY()
 
 	UFUNCTION(BlueprintCallable, Category="Custom Camera")
